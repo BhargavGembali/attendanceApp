@@ -3,33 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
     <title>attendance list</title>
   </head>
   <body class="bg">
     <div class="container">
-        <h1 class="text-center my-4" id="h1">
-            attendance
-        </h1>
-        
-        <table class="table">
-            <thead>
-                <tr >
-                    <th style="display: none; background-color: black; color: #ffffff;">ID</th>
-                    <th style="background-color: black; color: #ffffff;">Regno</th>
-                    <th style="background-color: black; color: #ffffff;">Name</th>
-                    <th style="background-color: black; color: #ffffff;">Date Of attendance</th>
-                    <th style="background-color: black; color: #ffffff;">status</th>
-                </tr>
-                <tbody>
-                    <tr th:each="attendance : ${students}" style="background-color: black; color: #ffffff;">
-                        <td th:text="${attendance.regno}" style=" display: none; background-color: black; color: #ffffff;"></td>
-                        <td th:text="${attendance.name}" style="background-color: black;  color: #ffffff;"></td>
-                        <td th:text="${attendance.date_of_attendace}" style="background-color: black;  color: #ffffff;"></td>
-                        <td th:text="${attendance.present}" style="background-color: black;  color: #ffffff;"></td>
-                    </tr>
-                </tbody>
-            </thead>
-        </table>
+        <a href="/attendance" class="title" id="myButton" onclick="animateButtonClick()">
+            Attendance
+        </a>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>

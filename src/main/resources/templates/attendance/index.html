@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>attendance list</title>
+  </head>
+  <body class="bg">
+    <div class="container">
+        <h1 class="text-center my-4" id="h1">
+            Attendance
+        </h1>
+        
+        <table class="table">
+            <thead>
+                <tr >
+                    <th style="background-color: black; color: #ffffff;">Id</th>
+                    <th style="background-color: black; color: #ffffff;">Name</th>
+                    <th style="background-color: black; color: #ffffff;">Date Of attendance</th>
+                    <th style="background-color: black; color: #ffffff;">status</th>
+                </tr>
+                <tbody>
+                    <tr th:each="attendance: ${attendance}" style=" color: #000000;">
+                        <td th:text="${attendance.id}" style=" color: #000000;"></td>
+                        <td th:text="${attendance.name}" style="  color: #000000;"></td>
+                        <td th:text="${attendance.dateofattendance}" style="  color: #000000;"></td>
+                        <td th:text="${attendance.status}" style="  color: #000000;"></td>
+                    </tr>
+                </tbody>
+            </thead>
+        </table>
+    </div>
+  </body>
+</html>

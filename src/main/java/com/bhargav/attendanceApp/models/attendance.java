@@ -4,22 +4,22 @@ import java.util.Date;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name="attendance")
+@Table(name="student")
 public class attendance {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String regno ;
+    private int id ;
 
     private String name;
-    private Date date_of_attendance;
-    private String present;
+    private Date dateofattendance;
+    private String status;
     
-    public String getRegno() {
-        return regno;
+    public int getId() {
+        return id;
     }
-    public void setRegno(String regno) {
-        this.regno = regno;
+    public void setId(int id) {
+        this.id = id;
     }
     public String getName() {
         return name;
@@ -27,17 +27,17 @@ public class attendance {
     public void setName(String name) {
         this.name = name;
     }
-    public Date getDate_of_attendance() {
-        return date_of_attendance;
+    public Date getDateofattendance() {
+        return dateofattendance;
     }
-    public void setDate_of_attendance(Date date_of_attendance) {
-        this.date_of_attendance = date_of_attendance;
+    public void setDateofattendance(Date dateofattendance) {
+        this.dateofattendance = dateofattendance;
     }
-    public String getPresent() {
-        return present;
+    public String getStatus() {
+        return status;
     }
-    public void setPresent(String present) {
-        this.present = present;
+    public void setStatus(String status) {
+        this.status = status;
     }
     
     

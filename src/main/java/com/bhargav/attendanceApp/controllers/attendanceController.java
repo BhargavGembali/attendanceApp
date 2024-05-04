@@ -22,7 +22,7 @@ public class attendanceController {
 
     @GetMapping({"","/"})
     public String showAttendanceList(Model model){
-        List<attendance> attendance= repo.findAll(Sort.by(Sort.Direction.ASC, "regno"));
+        List<attendance> attendance= repo.findAll(Sort.by(Sort.Direction.ASC, "id"));
         model.addAttribute("attendance", attendance);
         return "attendance/index";
     }

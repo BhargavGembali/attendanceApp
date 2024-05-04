@@ -1,0 +1,30 @@
+body{
+    width: auto;
+    height: 100%;
+    background-color: rgb(89, 89, 88);
+}
+.title{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    margin-left: 45%;
+    position: absolute;
+    margin-top: 40vh;
+    background-color: rgb(29, 29, 29);
+    padding: 25px 25px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 4px rgb(61, 61, 61);
+}
+
+/* Define the animation */
+@keyframes clickAnimation {
+    0% { box-shadow: 10px 10px 4px rgb(61, 61, 61); }
+    70% { box-shadow: 1px 1px 4px rgb(61, 61, 61); }
+    100% { box-shadow: 10px 10px 4px rgb(61, 61, 61); }
+  }
+  
+  /* Apply the animation to the button */
+  .button-click-animation {
+    animation: clickAnimation 0.1s;
+  }
+  
